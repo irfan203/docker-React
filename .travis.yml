@@ -18,8 +18,8 @@ deploy:
   on:
     branch: master
   access_key_id: $AWS_access_key
-  secret_access_key:
-    secure: "$AWS_secret_key"  
+  secret_access_key: $AWS_secret_key
+    
 
 # sudo: required
 # language: generic
