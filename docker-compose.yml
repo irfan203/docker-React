@@ -3,9 +3,9 @@ services:
    react-app:
     build: 
       context: .
-      dockerfile: Dockerfile.dev
-    #ports:
-     # - "5000:3000"
+      dockerfile: Dockerfile
+    ports:
+      - "5000:3000"
     volumes:
       - /app/node_modules
       - .:/app
